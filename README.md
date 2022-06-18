@@ -1,1 +1,1 @@
-# vuln_app
+This is a vulnerable web application
