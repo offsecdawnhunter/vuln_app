@@ -11,7 +11,7 @@ jobs:
     name: Scan
     runs-on: ubuntu-20.04
     env:
-      SEMGREP_APP_TOKEN: 5d879c5cbea914cece538b6009b818d197397be5df5041da299d6288e7c1089
+      SEMGREP_APP_TOKEN: 5d879c5cbea914cece538b6009b818d197397be5df5041da299d6288e7c10897
     container:
       image: returntocorp/semgrep
     steps:
