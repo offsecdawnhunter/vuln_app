@@ -1,6 +1,5 @@
 <?php
 //XSS attack page
-//Reflected XSS attack
 header ("X-XSS-Protection: 0");
 
 // Is there any input?
