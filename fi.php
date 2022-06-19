@@ -1,5 +1,6 @@
 <?php
-
+// File inclusion attack
+//check this out
 // The page we wish to display
 $file = $_GET[ 'page' ];
 
