@@ -1,11 +1,17 @@
 on:
-  pull_request: {}
+  pull_request:
+    branches: ['master']
   push:
-    branches:
-    - master
+    branches: ['master']
+
+permissions:
+    contents: read
+    
 name: Semgrep
 jobs:
   semgrep:
+    permissions:
+      contents: read # for actions/checkout to fetch code
     name: Scan
     runs-on: ubuntu-20.04
     env:
