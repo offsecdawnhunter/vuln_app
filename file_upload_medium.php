@@ -1,5 +1,5 @@
 <?php
-
+//Added a new vulnerability
 if( isset( $_POST[ 'Upload' ] ) ) {
 	// Where are we going to be writing to?
 	$target_path  = DVWA_WEB_PAGE_TO_ROOT . "hackable/uploads/";
