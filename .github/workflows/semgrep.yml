@@ -21,5 +21,3 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - run: semgrep ci
-      env:
-          SEMGREP_RULES: p/phpcs-security-audit
