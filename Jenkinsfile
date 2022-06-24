@@ -19,7 +19,7 @@ pipeline {
         //     branch "master"
         //   }
         steps {
-          sh 'pip3 install semgrep'
+          // sh 'pip3 install semgrep'
           sh 'semgrep --help'
       }
     }
