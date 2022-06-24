@@ -19,8 +19,8 @@ pipeline {
         //     branch "master"
         //   }
         steps {
-          sh 'pip3 install semgrep'
-          // sh 'semgrep ci --config auto'
+          sh 'pip3 install semgrep && echo "###########################"'
+          sh 'semgrep ci --config auto'
       }
     }
   }
