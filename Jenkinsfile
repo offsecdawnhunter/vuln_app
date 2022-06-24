@@ -15,9 +15,9 @@ pipeline {
     }
     stages {
       stage('Semgrep-Scan') {
-         when {
-            branch "master"
-          }
+        //  when {
+        //     branch "master"
+        //   }
         steps {
           sh 'docker run --rm -v "${PWD}:/src" returntocorp/semgrep --config "p/phpcs-security-audit"'
           //sh 'semgrep ci --config auto'
