@@ -20,9 +20,8 @@ pipeline {
         //     branch "master"
         //   }
         steps {
-          // sh 'pip3 install semgrep'
-          // sh 'semgrep ci'
-          sh 'docker run --rm -v "${PWD}:/src" returntocorp/semgrep semgrep --help'
+          sh 'rm -rf $HOME/vuln_app'
+					sh 'cd $HOME && git clone https://github.com/offsecdawn/vuln_app.git && cd vuln_app && git clone https://github.com/returntocorp/semgrep-rules.git && docker run --rm -v "${PWD}:/src" returntocorp/semgrep semgrep --config "/src/semgrep-rules/php"'
       }
     }
   }
