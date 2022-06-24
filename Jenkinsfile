@@ -23,7 +23,7 @@ pipeline {
           // sh 'rm -rf $HOME/vuln_app'
           // sh 'cd $HOME && git clone https://github.com/offsecdawn/vuln_app.git && cd vuln_app && git clone https://github.com/returntocorp/semgrep-rules.git'
           // sh 'docker run --rm -v "${PWD}:/src" returntocorp/semgrep semgrep --help'
-          sh 'uname -a'
+          sh 'python3 --version'
       }
     }
   }
