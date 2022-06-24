@@ -20,7 +20,7 @@ pipeline {
         //   }
         steps {
           // sh 'pip3 install semgrep'
-          sh 'semgrep --help'
+          sh 'semgrep ci --config auto'
       }
     }
   }
