@@ -20,7 +20,8 @@ pipeline {
         //   }
         steps {
           // sh 'pip3 install semgrep'
-          sh 'semgrep ci'
+          // sh 'semgrep ci'
+          sh 'echo $SEMGREP_APP_TOKEN'
       }
     }
   }
