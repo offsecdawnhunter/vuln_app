@@ -19,8 +19,9 @@ pipeline {
         //     branch "master"
         //   }
         steps {
-          sh 'rm -rf $HOME/vuln_app'
-          sh 'cd $HOME && git clone https://github.com/offsecdawn/vuln_app.git && cd vuln_app && git clone https://github.com/returntocorp/semgrep-rules.git && docker run --rm -v "${PWD}:/src" returntocorp/semgrep semgrep --config "/src/semgrep-rules/php"'
+          sh 'docker -h'
+          // sh 'rm -rf $HOME/vuln_app'
+          // sh 'cd $HOME && git clone https://github.com/offsecdawn/vuln_app.git && cd vuln_app && git clone https://github.com/returntocorp/semgrep-rules.git && docker run --rm -v "${PWD}:/src" returntocorp/semgrep semgrep --config "/src/semgrep-rules/php"'
       }
     }
   }
